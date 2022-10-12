@@ -1,0 +1,43 @@
+{% extends 'home.html' %}
+
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<h1>Members</h1>
+<table id="customers" border="1">
+    <thead>
+        <th>id</th>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>country</th>
+        <th colspan="2">Action</th>
+    </thead>
+    <tr>
+        <td>1</td>
+        <td>jagg</td>
+        <td>ans</td>
+        <td>india</td>
+        <td>
+            <a href="#"><button >update</button> </a>
+        </td>
+            <td>
+            <a href="#"><button id="del"> Delete</button> </a>
+        </td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>jagg</td>
+        <td>ans</td>
+        <td>india</td>
+        <td>
+            <a href="#"><button>update</button> </a>
+        </td>
+            <td>
+            <a href="#"><button id="del"> Delete</button> </a>
+        </td>
+    </tr>
+</table>
+   
+{% endblock %}
+
+
